@@ -1,0 +1,158 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.hamburg {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 4px 10px;
+    transition: background-color 0.3s;
+    border-radius: 5px; 
+}
+
+.hamburg:hover {
+    background-color: #555;
+}
+
+.header h2 {
+    margin: 0 10px; 
+}
+
+.header form {
+    margin-left: auto; 
+    margin-right: 20px; 
+}
+
+form input, form button {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 5px; 
+    border: 1px solid white; 
+}
+
+.tabs {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-grow: 1; 
+}
+
+.tabs a {
+    padding: 12px 20px; 
+    margin-left: 150px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    
+}
+
+.tabs a:hover {
+    background-color:gray;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    height: 92.5%;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    transition: background-color 0.3s;
+    border-radius: 5px; 
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.content {
+    margin: 100px auto 0;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.content-item {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        display: block;
+    }
+}
+
+.aula {
+    font-size: 35px;
+}
+
+pre {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 10px; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px; 
+    line-height: 1.5; 
+    overflow-x: auto; 
+    color: #212529; 
+    display: flex;
+    justify-content: center;
+    text-align: start;
+}
+
+
+p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
